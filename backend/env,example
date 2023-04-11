@@ -1,0 +1,8 @@
+PORT=8080
+
+NODE_ENV=development
+# NODE_ENV=production
+
+PORT=3033
+
+BASEURL=http://127.0.0.1
