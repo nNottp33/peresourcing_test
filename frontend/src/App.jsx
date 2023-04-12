@@ -3,8 +3,7 @@ import "./App.css";
 import { Box, TextField } from "@mui/material";
 import axios from "axios";
 import Child from "./components/Child";
-
-const CONFIG = { uri: "http://127.0.0.1:8080" };
+import Configs from "./configs/Config";
 
 function App() {
   const [result, setResult] = useState("");
@@ -12,7 +11,7 @@ function App() {
   function getResultFibonacci(ev) {
     const config = {
       methods: "GET",
-      url: `${CONFIG.uri}/calculate/fibonacci?number=${ev.target.value}`,
+      url: `${Configs.uri}/calculate/fibonacci?number=${ev.target.value}`,
     };
 
     axios(config).then((response) => {
