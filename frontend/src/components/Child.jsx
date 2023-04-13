@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
+import React from "react";
+import { Stack, Chip } from "@mui/material";
 
 function Child(props) {
   return (
-    <Stack direction="row" spacing={3}>
-      <strong>Result: </strong>
-      <Chip className="chip" label={props.resultNumber} />
+    <Stack style={{ justifyContent: "center" }} direction="row" spacing={1}>
+      <Chip
+        style={{ width: 150, textAlign: "center", backgroundColor: "#fcfcfc" }}
+        label={props.number}
+      />
     </Stack>
   );
 }
